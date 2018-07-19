@@ -1,0 +1,411 @@
+﻿
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  line-height: 1.25;
+}
+table {
+  border: 1px solid #ccc; /**/
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+table tr {
+  border: 1px solid #CCCCCE;
+  border-radius: 3px;
+  background: #f8f8f8;
+  padding: .35em;
+}
+table th,
+table td {
+  font-family: "Trebuchet MS", sans-serif;
+  color: blue;
+  font-size: 14px;
+  border: 1px solid #CCCCCE;
+  border-radius: 3px;
+  padding: .625em;
+  text-align: center;
+}
+table th {
+  font-family: "Trebuchet MS", sans-serif;
+  color: black;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+table input {
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+  font-size: 14px;
+	background-color: #f8f8f8;
+	Border: 0;
+	width: 100%;
+	height: 100%;
+	}
+
+@media screen and (max-width: 600px) {
+      
+  table {
+    border: 0;
+  }
+  table caption {    
+    font-size: 1.3em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  table td {
+    color: black;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  table td:before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }  
+  table input {
+  color: blue;
+  background-color: #f8f8f8;
+	Border: 0;
+	width: 50%;
+	height: 50%;
+	}
+}
+ 
+.form
+{
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF; 
+  max-width: 760px;
+  margin: 0 auto 0px;
+  padding: 35px;
+  text-align: left;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form-maior
+{
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF; 
+  max-width: 860px;
+  margin: 0 auto 0px;
+  padding: 35px;
+  text-align: left;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 1), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.coluna
+{
+  font-size: 14px
+}
+
+.normal-font
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255,255,255);
+  font-size: 12px;
+}
+
+
+.container
+{
+  position: relative;
+  z-index: 0;
+  max-width: 5px;
+  margin: 0 auto;
+}
+
+
+body
+{
+   background: #76b852; /* fallback for old browsers */
+   background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+   background: -moz-linear-gradient(right, #76b852, #8DC26F);
+   background: -o-linear-gradient(right, #76b852, #8DC26F);
+   background: linear-gradient(to left, #76b852, #8DC26F);
+}
+
+
+.titulo-tela
+{
+  font-style: italic;
+  font-weight: 500; /* quase bold - bold apenas é total negrito */
+  font-size: 28px;
+  font-family: Lucida Handwriting, Helvetica, sans-serif;
+  text-align: left;
+  position: relative
+}
+
+
+.logo
+{ 
+  float: right;
+  max-width: 255px;
+  max-height:40px;
+  size: relative
+}
+ 
+
+.saida
+{
+  float: right;
+  max-width: 70px;
+  max-height:70px;
+  size: relative
+}
+
+/*Para links não visitados */
+
+a:link
+{
+ font-family: Arial, Helvetica, sans-serif;
+ color: blue;
+}
+
+/* Para links ja visitados */
+
+a:visited
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color: Purple;
+}
+
+/* Para links cujo ponteiro do Mouse esta em cima dele no momento */
+a:hover
+
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color: yellow;
+}
+
+.Table-form
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ccc;
+  background: black;
+  text-align: center;
+  position: relative;
+
+}
+
+.Table-celula
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+  text-align: left;
+}
+
+.label-form
+{
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+  
+}
+.button
+{
+   border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 10px 50px;
+   -webkit-border-radius: 17px;
+   -moz-border-radius: 17px;
+   border-radius: 17px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #000000;
+   font-size: 16px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+ .botao01{
+     background: -webkit-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: -moz-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: -o-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: -ms-linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     background: linear-gradient(bottom, #E0E0E0, #F9F9F9 70%);
+     border: 1px solid #CCCCCE;
+     border-radius: 3px;  
+     color: #616165;
+     display: block;
+     font-family: "Trebuchet MS";
+     font-size: 14px;
+	   line-height: 1.25;
+     text-align: center;
+     text-decoration: none;
+     text-transform: uppercase;
+     text-shadow:1px 1px 0 #FFF;
+     padding: 5px 15px;
+     position: relative;
+     }
+.Botao01:hover {
+   border-top-color: #28597a;
+   background: #616165;
+   color: #ccc;
+   }
+.Botao01:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+  header{
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:white;
+  text-align:center;
+  padding: 20px 0;
+}
+
+footer{
+  display:block;
+  position:fixed;
+  width:100%;
+  bottom:0vh;
+  left:0;
+  background:white;
+  text-align:center;
+  padding: 20px 0;
+}
+
+main{
+  margin-top:80px;
+  color:white;
+}
+
+/* CSS do MENUs */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+       
+  .nav {
+    background: #FFF;
+    z-index: 200;
+    position: fixed;
+    width: 100%;
+    font-size: 1em;
+    overflow: auto;
+  }
+       
+     .nav ul {
+        padding: 1em;
+      }
+       
+        li {
+           display: inline-block;
+           margin-right: 2em;
+         }
+       
+           a {
+             text-decoration: none;
+             color: #444;
+           }
+       
+             a:hover {
+                color: red;
+             }
+       
+       .nav-toggle {
+          display: none;
+       }
+       
+.foto {
+    width: 100%;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 800px) {
+.wrap {
+   max-width: 100%;
+   margin: 0;
+}
+  
+  .nav.nav-aberta {
+       position: relative;
+       padding: 0 0 0.5em 0;
+       height: 0;
+   }   
+         
+      .nav ul {
+          padding: .5em;
+          margin: 0;
+          background: #444;
+       }    
+         
+         li {
+             margin: 0;
+             padding: 0;
+             display: block;
+             border-bottom: 1px solid #FFF;
+          }
+            
+             li a {
+               padding: 0.5em 0 0.5em 0;
+               display: block;
+               color: #FFF;
+             }
+  
+            li:last-child {
+              border-bottom:none;
+            }
+         
+         .nav-toggle {
+            display: block;
+            padding: .4em;
+            margin: .5em 0;
+         }
+}
